@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "module": "es2015",
+    "target": "es2015",
+    "baseUrl": "./tmp",
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "outDir": "./tmp/esm2015",
+    "rootDir": "./tmp",
+    "skipLibCheck": true,
+    "lib": ["dom", "es2015"]
+  },
+  "files": ["./tmp/public_api.ts"],
+  "angularCompilerOptions": {
+    "annotateForClosureCompiler": true,
+    "strictMetadataEmit": true,
+    "skipTemplateCodegen": true,
+    "flatModuleOutFile": "ngx-tabs-libdemo.js",
+    "flatModuleId": "ngx-tabs-libdemo"
+  }
+}

@@ -3,7 +3,8 @@
   "version": "0.0.0-development",
   "description": "Demo library to showcase Angular packaging format",
   "scripts": {
-    "build:inline": "rsync -a *.ts ./tmp && node inlineAssets.js"
+    "build:inline": "rsync -a *.ts ./tmp && node inlineAssets.js",
+    "build:esm2015": "ngc -p tsconfig-esm2015.json"
   },
   "author": "Juri Strumpflohner",
   "license": "MIT",
@@ -15,7 +16,8 @@
   "devDependencies": {
     "@angular/core": "^5.0.2",
     "@angular/common": "^5.0.2",
-    "@angular/compiler-cli": "~5.0.0",
+    "@angular/compiler": "^5.0.2",
+    "@angular/compiler-cli": "^5.0.2",
     "rxjs": "^5.5.2",
     "typescript": "2.4.2",
     "zone.js": "^0.8.14",
