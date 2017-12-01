@@ -3,6 +3,8 @@
   "version": "0.0.0-development",
   "description": "Demo library to showcase Angular packaging format",
   "scripts": {
+    "build":
+      "npm run clean && npm run build:inline && npm run build:esm2015 && npm run build:fesm2015 && npm run build:esm5 && npm run build:fesm5 && npm run build:umd && npm run build:min && npm run move:assets",
     "build:inline": "rsync -a *.ts ./tmp && node inlineAssets.js",
     "build:esm2015": "ngc -p tsconfig-esm2015.json",
     "build:fesm2015": "rollup -c rollup-esm2015.conf.js",
@@ -10,7 +12,10 @@
     "build:fesm5": "rollup -c rollup-esm5.conf.js",
     "build:umd": "rollup -c rollup-umd.conf.js",
     "build:min":
-      "uglifyjs dist/bundles/ngx-tabs-libdemo.umd.js -c -m -o dist/bundles/ngx-tabs-libdemo.umd.min.js"
+      "uglifyjs dist/bundles/ngx-tabs-libdemo.umd.js -c -m -o dist/bundles/ngx-tabs-libdemo.umd.min.js",
+    "move:assets":
+      "cp -r tmp/esm2015/*.d.ts tmp/esm2015/src tmp/esm2015/*.json package.json README.md dist/ && rm dist/src/*.js",
+    "clean": "rm -rf dist/ && rm -rf tmp/"
   },
   "author": "Juri Strumpflohner",
   "license": "MIT",
