@@ -19,7 +19,10 @@
       "uglifyjs dist/bundles/ngx-tabs-libdemo.umd.js -c -m -o dist/bundles/ngx-tabs-libdemo.umd.min.js",
     "move:assets":
       "cp -r tmp/esm2015/*.d.ts tmp/esm2015/src tmp/esm2015/*.json package.json README.md dist/ && rm dist/src/*.js",
-    "clean": "rm -rf dist/ && rm -rf tmp/"
+    "clean": "rm -rf dist/ && rm -rf tmp/",
+    "copyPackageJson": "cp package.json dist",
+    "semantic-release":
+      "semantic-release pre && npm run copyPackageJson && npm publish dist && semantic-release post"
   },
   "author": "Juri Strumpflohner",
   "license": "MIT",
@@ -39,6 +42,11 @@
     "gulp-inline-ng2-template": "^4.0.0",
     "vinyl-fs": "^2.4.4",
     "rollup": "^0.51.8",
-    "uglify-js": "^3.0.7"
+    "uglify-js": "^3.0.7",
+    "semantic-release": "^8.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juristr/ngx-tabs-libdemo.git"
   }
 }
