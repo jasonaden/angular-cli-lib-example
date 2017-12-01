@@ -5,7 +5,9 @@
   "scripts": {
     "build:inline": "rsync -a *.ts ./tmp && node inlineAssets.js",
     "build:esm2015": "ngc -p tsconfig-esm2015.json",
-    "build:fesm2015": "rollup -c rollup-esm2015.conf.js"
+    "build:fesm2015": "rollup -c rollup-esm2015.conf.js",
+    "build:esm5": "ngc -p tsconfig-esm5.json",
+    "build:fesm5": "rollup -c rollup-esm5.conf.js"
   },
   "author": "Juri Strumpflohner",
   "license": "MIT",
