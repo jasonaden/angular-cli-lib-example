@@ -12,6 +12,7 @@
 
     "apps:affected": "./node_modules/.bin/nx affected apps",
     "build:affected": "./node_modules/.bin/nx affected build",
+    "build:lib": "ng-packagr -p libs/ngx-tabs-lib/package.json",
     "e2e:affected": "./node_modules/.bin/nx affected e2e",
 
     "affected:apps": "./node_modules/.bin/nx affected apps",

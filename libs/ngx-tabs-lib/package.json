@@ -1,4 +1,5 @@
 {
+  "$schema": "../../node_modules/ng-packagr/package.schema.json",
   "name": "ngx-tabs-lib",
   "version": "0.0.0",
   "license": "MIT",
@@ -6,5 +7,11 @@
   "peerDependencies": {
     "@angular/common": "^5.1.0",
     "@angular/core": "^5.1.0"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public_api.ts"
+    },
+    "dest": "../../dist/ngx-tabs-lib"
   }
 }
