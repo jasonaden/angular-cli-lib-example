@@ -4,6 +4,7 @@
 /dist
 /tmp
 /out-tsc
+/ngx-tabs-lib
 
 # dependencies
 /node_modules

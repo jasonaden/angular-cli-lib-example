@@ -12,6 +12,6 @@
     "lib": {
       "entryFile": "public_api.ts"
     },
-    "dest": "../../dist/ngx-tabs-lib"
+    "dest": "../../ngx-tabs-lib"
   }
 }
