@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ɵTabsComponent as TabsComponent } from 'ngx-tabs-lib';
+import { Container } from '@angular/compiler/src/i18n/i18n_ast';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  @ViewChild(TabsComponent) tabs: TabsComponent;
+
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(this.tabs);
+  }
+
 }
