@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
+import { NgxTabsLibModule } from 'ngx-tabs-lib';
 
 describe('AppComponent', () => {
   let component: AppComponent;
@@ -9,6 +10,7 @@ describe('AppComponent', () => {
   beforeEach(
     async(() => {
       TestBed.configureTestingModule({
+        imports: [NgxTabsLibModule],
         declarations: [AppComponent]
       }).compileComponents();
     })
