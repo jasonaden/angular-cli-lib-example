@@ -16,9 +16,7 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@angular-cli-lib-example/*": [
-        "libs/*"
-      ]
+      "ngx-tabs-lib": ["libs/ngx-tabs-lib"]
     }
   },
   "exclude": [

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 
-import {NgxTabsLibModule} from '@angular-cli-lib-example/ngx-tabs-lib';
+import {NgxTabsLibModule} from 'ngx-tabs-lib';
 
 @NgModule({
   imports: [
