@@ -1,1 +1,1 @@
-export { NgxTabsLibModule } from './src/ngx-tabs-lib.module';
+export * from './public_api';

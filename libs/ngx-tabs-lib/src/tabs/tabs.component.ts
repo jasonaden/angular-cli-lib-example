@@ -1,10 +1,5 @@
-import {
-  Component,
-  ContentChildren,
-  QueryList,
-  AfterContentInit
-} from '@angular/core';
-import { TabComponent } from './tab.component';
+import {Component, ContentChildren, QueryList, AfterContentInit} from '@angular/core';
+import { TabComponent } from '../tab/tab.component';
 
 @Component({
   selector: 'ngx-tabs',
@@ -26,8 +21,10 @@ export class TabsComponent implements AfterContentInit {
   }
 
   selectTab(tab: TabComponent) {
+    const tabs = this.tabs.toArray();
+    if (!tabs.length) return;
     // deactivate all tabs
-    this.tabs.toArray().forEach(tab => (tab.active = false));
+    tabs.forEach(tab => (tab.active = false));
 
     // activate the tab the user has clicked on.
     tab.active = true;
