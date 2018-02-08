@@ -65,10 +65,10 @@ Because it's a library, you don't want all the same dependencies as your project
 
 ### Step 3: Add ng-packagr
 
-Add the [`ng-packagr`](https://github.com/dherges/ng-packagr) as a dev dependency for your project. Currently  version 2 is the one supporting Angular v5, but it's still in release candidate. Install with the `@next` version:
+Add the [`ng-packagr`](https://github.com/dherges/ng-packagr) as a dev dependency for your project.
 
-`npm install --save-dev ng-packagr@next`
-`yarn add --dev ng-packagr@next`
+`npm install --save-dev ng-packagr`
+`yarn add --dev ng-packagr`
 
 ### Step 4: Configure ng-packagr
 
