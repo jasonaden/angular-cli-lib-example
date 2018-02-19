@@ -1,6 +1,6 @@
 # Sample Packaging Application
 
-This app was put together to show how to create and distribute an Angular library. It corresponds with the talk given at the Angular Mountain View Meetup ([video here](https://www.youtube.com/watch?v=c8Acc94s8aQ)).
+This app was put together to show how to create and distribute an Angular library. It corresponds with the talk given at the Angular Mountain View Meetup ([video here](https://www.youtube.com/watch?v=QfvwQEJVOig&t=3612s)).
 
 The steps below correspond to commits in this repo (after initial setup) so you should be able to refer to the individual commits to see the changes made.
 
